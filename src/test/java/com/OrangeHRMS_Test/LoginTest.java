@@ -28,6 +28,11 @@ public class LoginTest {
 		
 		ChromeOptions options = new ChromeOptions();
 		
+		        
+		//WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().driverVersion("130.0.6723.117").setup();
+		driver = new ChromeDriver();
+		
 		 // Set the binary location based on the environment
 //        String ENV_NAME = System.getenv("ENV_NAME");
 //        if ("production".equals(ENV_NAME)) {
@@ -44,10 +49,7 @@ public class LoginTest {
         options.addArguments("--remote-debugging-port=9222");
         options.addArguments("--disable-extensions");
         options.addArguments("--disable-gpu");
-        
-		//WebDriverManager.chromedriver().setup();
-		WebDriverManager.chromedriver().driverVersion("130.0.6723.117").setup();
-		driver = new ChromeDriver();
+
 		System.out.println("Chrome browser");
 		
 		System.out.println("The browser value is Chrome");
