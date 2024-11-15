@@ -26,9 +26,6 @@ public class LoginTest {
 		//		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver.exe");
 		//		driver = new ChromeDriver();
 
-		WebDriverManager.chromedriver().setup();
-		//WebDriverManager.chromedriver().driverVersion("130.0.6723.117").setup();
-		driver = new ChromeDriver();
 		ChromeOptions options = new ChromeOptions();
 		// Set the binary location based on the environment
 		//        String ENV_NAME = System.getenv("ENV_NAME");
@@ -49,6 +46,10 @@ public class LoginTest {
 
 
 		System.out.println("Chrome browser");
+
+		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().driverVersion("130.0.6723.117").setup();
+		driver = new ChromeDriver();
 
 		System.out.println("The browser value is Chrome");
 		driver.get(URL);
