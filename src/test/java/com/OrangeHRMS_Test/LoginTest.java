@@ -45,7 +45,7 @@ public class LoginTest {
 		driver.findElement(By.name("password")).sendKeys("admin123");
 		Thread.sleep(5000);
 		//driver.findElement(By.xpath("@type,'submit'")).click();
-		System.out.println("***********Login TC Pass******************");
+		System.out.println("***********Login page is displayed - TC Pass******************");
 	}
 	@AfterTest
 	public void quit() {
